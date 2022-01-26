@@ -17,7 +17,7 @@ buildscript {
             'retrofit'          :   '2.9.0',
             'okhttp'            :   '5.0.0-alpha.2',
             // Testing Deps
-            'junit'             :   '4.+',
+            'junit'             :   '4.13.2',
             'mockk'             :   '1.11.0',
 
     ]

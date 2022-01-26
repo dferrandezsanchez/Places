@@ -12,7 +12,7 @@ class PlacesServiceFactory(
     private val timeout: Long,
 ) {
 
-    fun <T> getFacePhiService(
+    fun <T> getPlaceService(
         apiClass: Class<T>
     ): T =
         Retrofit.Builder()

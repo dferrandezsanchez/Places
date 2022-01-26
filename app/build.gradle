@@ -40,4 +40,8 @@ dependencies {
     implementation "com.google.android.material:material:${versions.material}"
     implementation "androidx.constraintlayout:constraintlayout:${versions.constraintlayout}"
 
+    testImplementation "junit:junit:${versions.junit}"
+    testImplementation "io.mockk:mockk:${versions.mockk}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.kotlinx}"
+
 }
