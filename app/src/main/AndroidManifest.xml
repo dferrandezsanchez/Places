@@ -3,6 +3,7 @@
     package="dev.danielferrandez.places">
 
     <application
+        android:name="dev.danielferrandez.PlacesApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
