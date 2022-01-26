@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
 }
 
@@ -7,13 +7,13 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "dev.danielferrandez.places"
         minSdk 23
         targetSdk 31
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -33,11 +33,10 @@ android {
 
 dependencies {
 
-    implementation project(path: ":domain")
-    implementation project(path: ":data")
-    implementation "androidx.core:core-ktx:${versions.core_ktx}"
-    implementation "androidx.appcompat:appcompat:${versions.appcompat}"
-    implementation "com.google.android.material:material:${versions.material}"
-    implementation "androidx.constraintlayout:constraintlayout:${versions.constraintlayout}"
+    implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+    implementation "com.squareup.retrofit2:converter-moshi:${versions.retrofit}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.kotlinx}"
 
+    testImplementation "junit:junit:${versions.junit}"
 }
